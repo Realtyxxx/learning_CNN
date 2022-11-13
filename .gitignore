@@ -7,3 +7,5 @@ src/cnn.zip
 *.pptx
 *zip
 *.tar
+build/
+cmake-build-debug/

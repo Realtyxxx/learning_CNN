@@ -1,0 +1,67 @@
+[
+{
+  "directory": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -isystem /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/include -isystem /usr/local/Cellar/boost/1.80.0/include -isystem /usr/local/Cellar/opencv/4.6.0_1/include/opencv4 -O2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/cnn.dir/src/test/test.cpp.o -c /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/test/test.cpp",
+  "file": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/test/test.cpp"
+},
+{
+  "directory": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -isystem /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/include -isystem /usr/local/Cellar/boost/1.80.0/include -isystem /usr/local/Cellar/opencv/4.6.0_1/include/opencv4 -O2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/cnn.dir/src/pipeline.cpp.o -c /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/pipeline.cpp",
+  "file": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/pipeline.cpp"
+},
+{
+  "directory": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -isystem /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/include -isystem /usr/local/Cellar/boost/1.80.0/include -isystem /usr/local/Cellar/opencv/4.6.0_1/include/opencv4 -O2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/cnn.dir/src/data_format.cpp.o -c /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/data_format.cpp",
+  "file": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/data_format.cpp"
+},
+{
+  "directory": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -isystem /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/include -isystem /usr/local/Cellar/boost/1.80.0/include -isystem /usr/local/Cellar/opencv/4.6.0_1/include/opencv4 -O2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/cnn.dir/src/relu.cpp.o -c /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/relu.cpp",
+  "file": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/relu.cpp"
+},
+{
+  "directory": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -isystem /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/include -isystem /usr/local/Cellar/boost/1.80.0/include -isystem /usr/local/Cellar/opencv/4.6.0_1/include/opencv4 -O2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/cnn.dir/src/linear.cpp.o -c /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/linear.cpp",
+  "file": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/linear.cpp"
+},
+{
+  "directory": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -isystem /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/include -isystem /usr/local/Cellar/boost/1.80.0/include -isystem /usr/local/Cellar/opencv/4.6.0_1/include/opencv4 -O2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/cnn.dir/src/conv2d.cpp.o -c /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/conv2d.cpp",
+  "file": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/conv2d.cpp"
+},
+{
+  "directory": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -isystem /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/include -isystem /usr/local/Cellar/boost/1.80.0/include -isystem /usr/local/Cellar/opencv/4.6.0_1/include/opencv4 -O2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/cnn.dir/src/func.cpp.o -c /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/func.cpp",
+  "file": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/func.cpp"
+},
+{
+  "directory": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -isystem /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/include -isystem /usr/local/Cellar/boost/1.80.0/include -isystem /usr/local/Cellar/opencv/4.6.0_1/include/opencv4 -O2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/cnn.dir/src/pool2d.cpp.o -c /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/pool2d.cpp",
+  "file": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/pool2d.cpp"
+},
+{
+  "directory": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -isystem /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/include -isystem /usr/local/Cellar/boost/1.80.0/include -isystem /usr/local/Cellar/opencv/4.6.0_1/include/opencv4 -O2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/cnn.dir/src/batchnorm2d.cpp.o -c /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/batchnorm2d.cpp",
+  "file": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/batchnorm2d.cpp"
+},
+{
+  "directory": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -isystem /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/include -isystem /usr/local/Cellar/boost/1.80.0/include -isystem /usr/local/Cellar/opencv/4.6.0_1/include/opencv4 -O2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/cnn.dir/src/metrics.cpp.o -c /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/metrics.cpp",
+  "file": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/metrics.cpp"
+},
+{
+  "directory": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -isystem /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/include -isystem /usr/local/Cellar/boost/1.80.0/include -isystem /usr/local/Cellar/opencv/4.6.0_1/include/opencv4 -O2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/cnn.dir/src/architectures.cpp.o -c /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/architectures.cpp",
+  "file": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/architectures.cpp"
+},
+{
+  "directory": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -isystem /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/include -isystem /usr/local/Cellar/boost/1.80.0/include -isystem /usr/local/Cellar/opencv/4.6.0_1/include/opencv4 -O2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/cnn.dir/src/alexnet.cpp.o -c /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/alexnet.cpp",
+  "file": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/alexnet.cpp"
+},
+{
+  "directory": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -isystem /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/include -isystem /usr/local/Cellar/boost/1.80.0/include -isystem /usr/local/Cellar/opencv/4.6.0_1/include/opencv4 -O2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++17 -o CMakeFiles/cnn.dir/src/dropout.cpp.o -c /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/dropout.cpp",
+  "file": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/dropout.cpp"
+}
+]

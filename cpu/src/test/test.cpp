@@ -158,7 +158,8 @@ void test_AlexNet() {
 }
 
 int main() {
-  test_maxpool2d_layer();
+  // test_dataloader();
+  // test_maxpool2d_layer();
   // test_AlexNet();
   return 0;
 }

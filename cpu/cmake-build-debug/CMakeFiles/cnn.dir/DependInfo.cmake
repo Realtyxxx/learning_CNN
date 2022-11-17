@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/alexnet.cpp" "CMakeFiles/cnn.dir/src/alexnet.cpp.o" "gcc" "CMakeFiles/cnn.dir/src/alexnet.cpp.o.d"
   "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/architectures.cpp" "CMakeFiles/cnn.dir/src/architectures.cpp.o" "gcc" "CMakeFiles/cnn.dir/src/architectures.cpp.o.d"
   "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/batchnorm2d.cpp" "CMakeFiles/cnn.dir/src/batchnorm2d.cpp.o" "gcc" "CMakeFiles/cnn.dir/src/batchnorm2d.cpp.o.d"
+  "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/cnn.cpp" "CMakeFiles/cnn.dir/src/cnn.cpp.o" "gcc" "CMakeFiles/cnn.dir/src/cnn.cpp.o.d"
   "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/conv2d.cpp" "CMakeFiles/cnn.dir/src/conv2d.cpp.o" "gcc" "CMakeFiles/cnn.dir/src/conv2d.cpp.o.d"
   "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/data_format.cpp" "CMakeFiles/cnn.dir/src/data_format.cpp.o" "gcc" "CMakeFiles/cnn.dir/src/data_format.cpp.o.d"
   "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/dropout.cpp" "CMakeFiles/cnn.dir/src/dropout.cpp.o" "gcc" "CMakeFiles/cnn.dir/src/dropout.cpp.o.d"
@@ -20,7 +21,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/pipeline.cpp" "CMakeFiles/cnn.dir/src/pipeline.cpp.o" "gcc" "CMakeFiles/cnn.dir/src/pipeline.cpp.o.d"
   "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/pool2d.cpp" "CMakeFiles/cnn.dir/src/pool2d.cpp.o" "gcc" "CMakeFiles/cnn.dir/src/pool2d.cpp.o.d"
   "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/relu.cpp" "CMakeFiles/cnn.dir/src/relu.cpp.o" "gcc" "CMakeFiles/cnn.dir/src/relu.cpp.o.d"
-  "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/test/test.cpp" "CMakeFiles/cnn.dir/src/test/test.cpp.o" "gcc" "CMakeFiles/cnn.dir/src/test/test.cpp.o.d"
   )
 
 # Targets to which this target links.

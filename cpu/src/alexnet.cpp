@@ -7,7 +7,7 @@ using namespace architectures;
 
 AlexNet::AlexNet(const int num_classes, const bool batch_norm) {
   // batch_size X 3 X 224 X 224
-  this->layers_sequence.emplace_back(new Conv2D("conv_layer_1", 3, 16, 3));
+  this->layers_sequence.emplace_back(new Conv2D("conv_layer_1", 3, 16, 3));  // *　默认stride = 2
   if (batch_norm)
     this->layers_sequence.emplace_back(new BatchNorm2D("bn_layer_1", 16));
   this->layers_sequence.emplace_back(new ReLU("relu_layer_1"));

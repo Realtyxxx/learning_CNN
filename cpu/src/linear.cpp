@@ -23,8 +23,8 @@ LinearLayer::LinearLayer(std::string _name, const int _in_channels, const int _o
 // 做 Wx + b 矩阵运算
 std::vector<tensor> LinearLayer::forward(const std::vector<tensor>& input) {
   // 获取输入信息
-  const int batch_size = input.size();
-  this->delta_shape    = input[0]->get_shape();
+  const int batch_size = input.size();           // B * C * H * W
+  this->delta_shape    = input[0]->get_shape();  // C , H , W
   // 清空之前的结果, 重新开始
   std::vector<tensor>().swap(this->output);
   for (int b = 0; b < batch_size; ++b)
@@ -32,14 +32,16 @@ std::vector<tensor> LinearLayer::forward(const std::vector<tensor>& input) {
   // 记录输入
   if (not no_grad)
     this->__input = input;
-  // batch 每个图象分开算
+  // batch 每个图象分开算  //! batch times : input(1 * CHW) * weight(CHW * out_channel) , here I think he means the CHW
+  // is the in_channel
   for (int b = 0; b < batch_size; ++b) {
     // 矩阵相乘,   dot
     data_type* src_ptr = input[b]->data;         // 1 X 4096
     data_type* res_ptr = this->output[b]->data;  // 1 X 10
     for (int i = 0; i < out_channels; ++i) {
       data_type sum_value = 0;
-      for (int j = 0; j < in_channels; ++j) sum_value += src_ptr[j] * this->weights[j * out_channels + i];
+      for (int j = 0; j < in_channels; ++j)
+        sum_value += src_ptr[j] * this->weights[j * out_channels + i];  //! inchannels means C *Ｈ * W
       res_ptr[i] = sum_value + bias[i];
     }
   }
@@ -54,7 +56,7 @@ std::vector<tensor> LinearLayer::backward(std::vector<tensor>& delta) {
     this->weights_gradients.assign(in_channels * out_channels, 0);
     this->bias_gradients.assign(out_channels, 0);
   }
-  // 计算 W 的梯度
+  // 计算 W 的梯度 //! 所有的图片的梯度相关的求和 取平均
   for (int i = 0; i < in_channels; ++i) {
     data_type* w_ptr = this->weights_gradients.data() + i * out_channels;
     for (int j = 0; j < out_channels; ++j) {
@@ -63,7 +65,7 @@ std::vector<tensor> LinearLayer::backward(std::vector<tensor>& delta) {
       w_ptr[j] = sum_value / batch_size;
     }
   }
-  // 计算 bias 的梯度
+  // 计算 bias 的梯度 //! 同所有的图片的梯度求和取平均，因为bias是直接相加的
   for (int i = 0; i < out_channels; ++i) {
     data_type sum_value = 0;
     for (int b = 0; b < batch_size; ++b) sum_value += delta[b]->data[i];

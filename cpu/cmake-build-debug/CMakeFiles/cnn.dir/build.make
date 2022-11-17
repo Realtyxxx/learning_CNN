@@ -69,19 +69,19 @@ include CMakeFiles/cnn.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cnn.dir/flags.make
 
-CMakeFiles/cnn.dir/src/test/test.cpp.o: CMakeFiles/cnn.dir/flags.make
-CMakeFiles/cnn.dir/src/test/test.cpp.o: /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/test/test.cpp
-CMakeFiles/cnn.dir/src/test/test.cpp.o: CMakeFiles/cnn.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cnn.dir/src/test/test.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cnn.dir/src/test/test.cpp.o -MF CMakeFiles/cnn.dir/src/test/test.cpp.o.d -o CMakeFiles/cnn.dir/src/test/test.cpp.o -c /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/test/test.cpp
+CMakeFiles/cnn.dir/src/cnn.cpp.o: CMakeFiles/cnn.dir/flags.make
+CMakeFiles/cnn.dir/src/cnn.cpp.o: /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/cnn.cpp
+CMakeFiles/cnn.dir/src/cnn.cpp.o: CMakeFiles/cnn.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cnn.dir/src/cnn.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cnn.dir/src/cnn.cpp.o -MF CMakeFiles/cnn.dir/src/cnn.cpp.o.d -o CMakeFiles/cnn.dir/src/cnn.cpp.o -c /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/cnn.cpp
 
-CMakeFiles/cnn.dir/src/test/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cnn.dir/src/test/test.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/test/test.cpp > CMakeFiles/cnn.dir/src/test/test.cpp.i
+CMakeFiles/cnn.dir/src/cnn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cnn.dir/src/cnn.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/cnn.cpp > CMakeFiles/cnn.dir/src/cnn.cpp.i
 
-CMakeFiles/cnn.dir/src/test/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cnn.dir/src/test/test.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/test/test.cpp -o CMakeFiles/cnn.dir/src/test/test.cpp.s
+CMakeFiles/cnn.dir/src/cnn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cnn.dir/src/cnn.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/cnn.cpp -o CMakeFiles/cnn.dir/src/cnn.cpp.s
 
 CMakeFiles/cnn.dir/src/pipeline.cpp.o: CMakeFiles/cnn.dir/flags.make
 CMakeFiles/cnn.dir/src/pipeline.cpp.o: /Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu/src/pipeline.cpp
@@ -253,7 +253,7 @@ CMakeFiles/cnn.dir/src/dropout.cpp.s: cmake_force
 
 # Object files for target cnn
 cnn_OBJECTS = \
-"CMakeFiles/cnn.dir/src/test/test.cpp.o" \
+"CMakeFiles/cnn.dir/src/cnn.cpp.o" \
 "CMakeFiles/cnn.dir/src/pipeline.cpp.o" \
 "CMakeFiles/cnn.dir/src/data_format.cpp.o" \
 "CMakeFiles/cnn.dir/src/relu.cpp.o" \
@@ -270,7 +270,7 @@ cnn_OBJECTS = \
 # External object files for target cnn
 cnn_EXTERNAL_OBJECTS =
 
-bin/cnn: CMakeFiles/cnn.dir/src/test/test.cpp.o
+bin/cnn: CMakeFiles/cnn.dir/src/cnn.cpp.o
 bin/cnn: CMakeFiles/cnn.dir/src/pipeline.cpp.o
 bin/cnn: CMakeFiles/cnn.dir/src/data_format.cpp.o
 bin/cnn: CMakeFiles/cnn.dir/src/relu.cpp.o

@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cnn.dir/src/architectures.cpp.o.d"
   "CMakeFiles/cnn.dir/src/batchnorm2d.cpp.o"
   "CMakeFiles/cnn.dir/src/batchnorm2d.cpp.o.d"
+  "CMakeFiles/cnn.dir/src/cnn.cpp.o"
+  "CMakeFiles/cnn.dir/src/cnn.cpp.o.d"
   "CMakeFiles/cnn.dir/src/conv2d.cpp.o"
   "CMakeFiles/cnn.dir/src/conv2d.cpp.o.d"
   "CMakeFiles/cnn.dir/src/data_format.cpp.o"
@@ -23,8 +25,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/cnn.dir/src/pool2d.cpp.o.d"
   "CMakeFiles/cnn.dir/src/relu.cpp.o"
   "CMakeFiles/cnn.dir/src/relu.cpp.o.d"
-  "CMakeFiles/cnn.dir/src/test/test.cpp.o"
-  "CMakeFiles/cnn.dir/src/test/test.cpp.o.d"
   "bin/cnn"
   "bin/cnn.pdb"
 )

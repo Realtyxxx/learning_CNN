@@ -2,7 +2,8 @@
   "files.associations": {
     "*.S": "arm",
     "ios": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "istream": "cpp"
   },
   "cmake.sourceDirectory": "/Users/realtyxxx_mac/study/learning_cnn/learning_CNN/cpu"
 }

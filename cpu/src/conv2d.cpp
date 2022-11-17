@@ -71,15 +71,15 @@ std::vector<tensor> Conv2D::forward(const std::vector<tensor>& input) {
   const int window_range    = kernel_size * kernel_size;  // 卷积核一个二维平面的大小, 用来算偏移的
   const int* const __offset = this->offset.data();        // 获取偏移量指针
   // 首先每张图像分开卷积
-  for (int b = 0; b < batch_size; ++b) { // ! 1 first for num of pics
+  for (int b = 0; b < batch_size; ++b) {  // ! 1 first for num of pics
     // 获取第 b 张图像的起始地址, in_channels X 224 X 224
     data_type* const cur_image_features = input[b]->data;
-    for (int o = 0; o < out_channels; ++o) {  // ! 2  每个卷积核 
+    for (int o = 0; o < out_channels; ++o) {  // ! 2  每个卷积核
       data_type* const out_ptr =
           this->output[b]->data + o * out_length;  // 第 o 个卷积核会得到一张 out_H X out_W 的特征图
       data_type* const cur_w_ptr = this->weights[o]->data;  // in_channels x 3 x 3
-      int              cnt       = 0;                       // 记录每次卷积结果存放的位置 // ? 对应 output channel 中每个channel内的图片相应的的点值
-      for (int x = radius; x < H_radius; x += stride) { // ! 3 for H
+      int cnt = 0;  // 记录每次卷积结果存放的位置 // ? 对应 output channel 中每个channel内的图片相应的的点值
+      for (int x = radius; x < H_radius; x += stride) {    // ! 3 for H
         for (int y = radius; y < W_radius; y += stride) {  // ! 4 for W  遍历图像平面每一个点
           data_type sum_value = 0.f;
           const int coord     = x * W + y;           // 当前点对于这个通道的特征图的位移
@@ -126,7 +126,6 @@ std::vector<tensor> Conv2D::backward(std::vector<tensor>& delta) {
   for (int o = 0; o < out_channels; ++o) this->weights_gradients[o]->set_zero();
   for (int o = 0; o < out_channels; ++o) this->bias_gradients[o] = 0;
 
-
   // 先求 weights, bias 的梯度
   for (int b = 0; b < batch_size; ++b) {  // 这个 batch 每张图像对应一个梯度, 多个梯度取平均
     // 首先, 遍历每个卷积核
@@ -149,14 +148,15 @@ std::vector<tensor> Conv2D::backward(std::vector<tensor>& delta) {
               data_type* delta_ptr = o_delta + x * out_W;
               // 对应的输入 I 在这个通道的第 (x * stride + k_x) 行， 每行 W 个数，
               // 注意 * stride 每次在 input 中是跳着找的, + k_x 是找竖直方向上的偏移量; 下面的 y * stride + k_y 同理
-              data_type* input_ptr = in_ptr + (x * stride + k_x) * W; //! 这里就是不同了，这里回归到原图时候就是差别
+              data_type* input_ptr = in_ptr + (x * stride + k_x) * W;  //! 这里就是不同了，这里回归到原图时候就是差别
               for (int y = 0; y < out_W; ++y) {
                 // 当前 w 的梯度, 由参与计算的输入和返回的梯度相乘，累加
-                sum_value += delta_ptr[y] * input_ptr[y * stride + k_y]; // ? 暂时不确定这个函数是否正确
+                sum_value += delta_ptr[y] * input_ptr[y * stride + k_y];  // ? 暂时不确定这个函数是否正确
               }
             }
-            // 更新到 weight_gradients, 注意除以了 batch_size；这里是 +=， 不是 =, 一个 batch 的梯度累加
-            w_ptr[k_x * kernel_size + k_y] += sum_value / batch_size; //? OIHW , 统计每个图片的该channel weight值和他有关的的相关的
+            //* 更新到 weight_gradients, 注意除以了 batch_size；这里是 +=， 不是 =, 一个 batch 的梯度累加
+            w_ptr[k_x * kernel_size + k_y] +=
+                sum_value / batch_size;  //? OIHW , 统计每个图片的该channel weight值和他有关的的相关的
           }
         }
       }
@@ -240,7 +240,8 @@ void Conv2D::load_weights(std::ifstream& reader) {
   const int filter_size = sizeof(data_type) * params_for_one_kernel;
   for (int o = 0; o < out_channels; ++o)
     reader.read((char*)(&weights[o]->data[0]), static_cast<std::streamsize>(filter_size));
-  reader.read((char*)(&bias[0]), static_cast<std::streamsize>(sizeof(data_type) * out_channels));
+  reader.read((char*)(&bias[0]),
+              static_cast<std::streamsize>(sizeof(data_type) * out_channels));  // bias 只有out channel长度
 }
 
 // 获取这一层卷积层的参数值

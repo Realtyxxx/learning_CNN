@@ -148,7 +148,9 @@ void test_AlexNet() {
   const int           batch_size = 8;
   for (int i = 0; i < batch_size; ++i) input.emplace_back(new Tensor3D(3, 224, 224));
   // forward
+  printf(" forward : \n");
   auto output = network.forward(input);
+  printf(" backward : \n");
   // 定义梯度
   std::vector<tensor> delta;
   for (int i = 0; i < batch_size; ++i)
@@ -160,6 +162,6 @@ void test_AlexNet() {
 int main() {
   // test_dataloader();
   // test_maxpool2d_layer();
-  // test_AlexNet();
+  test_AlexNet();
   return 0;
 }

@@ -8,17 +8,17 @@
 #include "func.h"
 #include "metrics.h"
 
-// 完全可复现, 随机种子定了
-// 还需要实现的功能
-// 1. 模型参数的存储和加载  OK
-// 2. 动量, Adam 这些, 暂时没想到优雅的解决办法
-// 3. batch norm 的实现  OK, 但测试阶段效果很差
-// 4. dropout 的实现   OK, 但测试阶段效果很差
-// 5. 网络结构有点差劲, 虽然可以跑, 凑合用
-// 6. 自动求导, 重头戏, 有时间再说
-// 7. 後面有時間加上 AvgPool2D、Global Pool 等组件
-// 8. 目前的卷积层无法加上 padding
-// 9. 混淆矩阵没有写, 还有没有统计历史的损失画图什么的, 有些麻烦了, 暂时不搞了
+//? 完全可复现, 随机种子定了
+//? 还需要实现的功能
+//? 1. 模型参数的存储和加载  OK
+//? 2. 动量, Adam 这些, 暂时没想到优雅的解决办法
+//? 3. batch norm 的实现  OK, 但测试阶段效果很差
+//? 4. dropout 的实现   OK, 但测试阶段效果很差
+//? 5. 网络结构有点差劲, 虽然可以跑, 凑合用
+//? 6. 自动求导, 重头戏, 有时间再说
+//? 7. 後面有時間加上 AvgPool2D、Global Pool 等组件
+//? 8. 目前的卷积层无法加上 padding
+//? 9. 混淆矩阵没有写, 还有没有统计历史的损失画图什么的, 有些麻烦了, 暂时不搞了
 
 int main() {
 
@@ -61,8 +61,9 @@ int main() {
   float                 current_best_accuracy = -1;  // 记录当前最高的正确率
 
   // 开始训练
-  const int               start_iters   = 1;       // 从第几个 iter 开始
-  const int               total_iters   = 400000;  // 训练 batch 的总数
+  const int start_iters = 1;  // 从第几个 iter 开始
+  // const int               total_iters   = 400000;  // 训练 batch 的总数
+  const int               total_iters   = 20000;   // 训练 batch 的总数
   const float             learning_rate = 1e-3;    // 学习率
   const int               valid_inters  = 1000;    // 验证一次的间隔
   const int               save_iters    = 5000;    // 保存模型的间隔

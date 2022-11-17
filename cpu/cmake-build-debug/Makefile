@@ -201,6 +201,30 @@ src/batchnorm2d.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cnn.dir/build.make CMakeFiles/cnn.dir/src/batchnorm2d.cpp.s
 .PHONY : src/batchnorm2d.cpp.s
 
+src/cnn.o: src/cnn.cpp.o
+.PHONY : src/cnn.o
+
+# target to build an object file
+src/cnn.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cnn.dir/build.make CMakeFiles/cnn.dir/src/cnn.cpp.o
+.PHONY : src/cnn.cpp.o
+
+src/cnn.i: src/cnn.cpp.i
+.PHONY : src/cnn.i
+
+# target to preprocess a source file
+src/cnn.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cnn.dir/build.make CMakeFiles/cnn.dir/src/cnn.cpp.i
+.PHONY : src/cnn.cpp.i
+
+src/cnn.s: src/cnn.cpp.s
+.PHONY : src/cnn.s
+
+# target to generate assembly for a file
+src/cnn.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cnn.dir/build.make CMakeFiles/cnn.dir/src/cnn.cpp.s
+.PHONY : src/cnn.cpp.s
+
 src/conv2d.o: src/conv2d.cpp.o
 .PHONY : src/conv2d.o
 
@@ -417,30 +441,6 @@ src/relu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cnn.dir/build.make CMakeFiles/cnn.dir/src/relu.cpp.s
 .PHONY : src/relu.cpp.s
 
-src/test/test.o: src/test/test.cpp.o
-.PHONY : src/test/test.o
-
-# target to build an object file
-src/test/test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cnn.dir/build.make CMakeFiles/cnn.dir/src/test/test.cpp.o
-.PHONY : src/test/test.cpp.o
-
-src/test/test.i: src/test/test.cpp.i
-.PHONY : src/test/test.i
-
-# target to preprocess a source file
-src/test/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cnn.dir/build.make CMakeFiles/cnn.dir/src/test/test.cpp.i
-.PHONY : src/test/test.cpp.i
-
-src/test/test.s: src/test/test.cpp.s
-.PHONY : src/test/test.s
-
-# target to generate assembly for a file
-src/test/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cnn.dir/build.make CMakeFiles/cnn.dir/src/test/test.cpp.s
-.PHONY : src/test/test.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -459,6 +459,9 @@ help:
 	@echo "... src/batchnorm2d.o"
 	@echo "... src/batchnorm2d.i"
 	@echo "... src/batchnorm2d.s"
+	@echo "... src/cnn.o"
+	@echo "... src/cnn.i"
+	@echo "... src/cnn.s"
 	@echo "... src/conv2d.o"
 	@echo "... src/conv2d.i"
 	@echo "... src/conv2d.s"
@@ -486,9 +489,6 @@ help:
 	@echo "... src/relu.o"
 	@echo "... src/relu.i"
 	@echo "... src/relu.s"
-	@echo "... src/test/test.o"
-	@echo "... src/test/test.i"
-	@echo "... src/test/test.s"
 .PHONY : help
 
 

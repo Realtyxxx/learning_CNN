@@ -9,3 +9,4 @@ src/cnn.zip
 *.tar
 build/
 cmake-build-debug/
+checkpoints/
